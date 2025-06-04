@@ -4,7 +4,7 @@
 body, html {
   background: url('https://vnil.me/rsejP0JYUYoz.jpg') no-repeat center center fixed;
   background-size: cover;
-  backdrop-filter: brightness(0.3);
+  backdrop-filter: blur(5px) brightness(0.3);
   font-family: 'Comfortaa', sans-serif !important;
   color: #e5e5ff !important;
 }
@@ -13,9 +13,7 @@ body, html {
 #header {
     background-color: rgba(20, 20, 35, 0.4) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-    /* backdrop-filter: blur(5px); /* Optional: if you want the top bar blurred too */
-    /* -webkit-backdrop-filter: blur(5px); */
-    display: flex !important; /* Attempt to make items in header align better */
+    display: flex !important;
     align-items: center !important;
 }
 #header .x-form-field { /* Search input in header */
@@ -24,7 +22,7 @@ body, html {
     color: #fff !important;
 }
 
-/* === Logo Replacement === */
+/* === Logo Replacement (REVISED for wider logo) === */
 a[href="https://www.proxmox.com"] img,
 img[src="/pve2/images/proxmox_logo.png"]
 {
@@ -35,17 +33,17 @@ a.x-plain[href="https://www.proxmox.com"]
 {
   display: inline-block !important;
   vertical-align: middle !important;
-  background-image: url('https://vnil.me/pdzQraYzwXhR.png') !important;
+  background-image: url('https://vnil.me/8SU3Htz1MaDo.png') !important; /* <-- UPDATED LOGO URL */
   background-size: contain !important;
   background-repeat: no-repeat !important;
-  background-position: center center !important;
-  width: 36px !important;
-  height: 36px !important;
-  line-height: 36px !important;
+  background-position: left center !important;
+  width: 220px !important;    /* ADJUST THIS WIDTH AS NEEDED */
+  height: 38px !important;   /* Adjust height if needed */
+  line-height: 38px !important;
   left: auto !important;
   top: auto !important;
-  margin: 0 8px 0 5px !important;
-  opacity: 0.9 !important;
+  margin: 0 10px 0 5px !important;
+  opacity: 1 !important;
   border: none !important;
   text-indent: -9999px !important;
   overflow: hidden !important;
@@ -59,26 +57,10 @@ a.x-plain[href="https://www.proxmox.com"]
   visibility: hidden !important;
 }
 
-/* === Header Text Replacement (REVISED with specific ID) === */
+/* === Header Text Replacement (MODIFIED to HIDE original text) === */
 #versioninfo-innerCt
 {
-  font-size: 0 !important;
-  color: transparent !important;
-  display: inline-block !important;
-  vertical-align: middle !important;
-  line-height: normal !important;
-  white-space: nowrap;
-}
-
-#versioninfo-innerCt::before
-{
-  content: "ChibiDreams VE 8.3.4" !important;
-  font-size: 15px !important; /* ADJUST FONT SIZE */
-  color: #e5e5ff !important;
-  display: inline-block !important;
-  vertical-align: middle !important;
-  line-height: normal !important;
-  /* padding-left: 5px; /* Adjust if needed */
+  display: none !important; /* Hide this element completely */
 }
 
 
