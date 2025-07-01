@@ -259,7 +259,7 @@ textarea, select, .x-form-field {
 }
 
 .x-btn-default-small:hover,
-.x-btn-  default-toolbar-small:hover,
+.x-btn-default-toolbar-small:hover,
 .x-btn-default-medium:hover {
     background-color: rgba(190, 170, 255, 0.6) !important;
     border-color: rgba(255, 255, 255, 0.25) !important;
